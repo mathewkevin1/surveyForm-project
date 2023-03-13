@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(0, 0, 255, 0.89);
+    color: white;
+    
+    
+}
+
+#title, #description{
+    text-align: center;
+}
+
+#survey-form{
+    padding: 50px;
+    background-color: black;
+    max-width: 500px;
+    min-height: 400px;
+    margin: auto;
+    border-radius: 8px;
+    
+}
+
+#name,#email,#number{
+    width: 350px; 
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
