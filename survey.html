@@ -1,13 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
 </head>
 <body>
-   <h1>hello world</h1> 
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+
+  <form id="survey-form">
+    <label id="name-label">Name</label><br>
+    <input id="name" type="text"required="true" placeholder="Name"></input></div><br>
+
+<div class="form-group">
+    <label id="email-label">E-mail</label><br>
+    <input id="email" type="email"required="true" placeholder="E-mail"></div><br>
+
+<div class="form-group">
+    <label id="number-label">Number</label><br>
+    <input id="number" type="number" min="2" Max="10" placeholder="Number"></div><br>
+
+<div class="form-group">
+ <label for="cars">Choose a car</label>
+
+    <select name="dropdown" id="dropdown">
+    <option value="Toyota">Toyota</option>
+    <option value="volvo">volvo</option>
+    <option value="Benz">Benz</option>
+    <option value="Camry">Camry</option>
+    </select>
+</div><br>
+
+<div class="form-group">
+ <label for="manual">
+    <input id="manual" type="radio" name="manual-automatic" value="Manual">Manual</input>
+ </label><br>
+
+ <label for="automatic">
+    <input id="automatic" 
+    type="radio" 
+    name="manual-automatic"
+    value="Automatic">Automatic</input>
+</label>
+</div>
+
+<div class="form-group">
+<p>What will You like to see improved? <span class="clue">(Check all that apply)</span>
+ </P>
+<label for="checkbox">
+   <input type="checkbox"
+   name="improve" 
+   value="brakes">Brakes</input><br>
+
+   <input type="checkbox" 
+   name="improve" 
+   value="clutches">Clutches</input><br>
+
+   <input type="checkbox" 
+   name="improve" 
+   value="wheels">wheels</input>
+</label>
+</div>
+
+<div>
+   <p>Any comments or suggestions?</p>
+<textarea id="text-area"
+    name="comment" 
+    class= "input-text" 
+    placeholder="Enter your  text here"></textarea>
+</div>
+<div>
+   <button type="submit"
+   id="submit">
+
+   </button>
+</div>
+   </form>
+
 </body>
-</html>
